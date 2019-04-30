@@ -14,7 +14,7 @@ Run the command ```node livePersonWebSocket.js``` in your terminal to execute th
 * You must run this script twice. The first attempt will establish the WebSocket connection with LivePerson's server. Thereafter, you must accept the conversation on the admin console and then manually click on the Conversation accordion to identify the conversationId. You will need to replace the dialogId value in the message object in the ```livePersonWebSocket.js``` script to correctly publish a message.
 
 **Workaround**
-* Using the admin console, I was able to identify the conversationId from the open webSocket connection. I statically typed in the guid associated with the ID into the script. As a result, I was able to send a publish a message to the agent.
+* Using the admin console, I was able to identify the conversationId from the open webSocket connection. I statically typed in the guid associated with the ID into the script. As a result, I was able to publish a message to the agent.
 
 **Limits/Blockers**
 * I was unable to retrieve a response from LivePerson's server when I sent this web socket request to the server:
